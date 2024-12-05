@@ -1,0 +1,120 @@
+/* Base styles for all devices */
+body {
+    background: linear-gradient(to right, #ffccff, #ffffff);
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Titles */
+h1 {
+    color: #e6007e;
+    text-align: center;
+}
+
+h2 {
+    color: #ff4d94;
+    font-size: 20px;
+}
+
+/* Progress Bar Styles */
+#progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #ff4d94;
+    border-radius: 5px;
+}
+
+/* Button styles */
+button {
+    background-color: #ff4d94;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6007e;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+/* Make the layout responsive for smaller screens */
+
+/* Tablet or small desktop (min-width: 600px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+/* Phone screens (min-width: 320px, max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
